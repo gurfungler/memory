@@ -31,7 +31,6 @@ function Deck({ addScore, setHighscore }) {
   };
 
   const checkCard = (index) => {
-    console.log(generatedCards);
     if (!seenCards.includes(index)) {
       setSeenCards([...seenCards, index]); //checks if card has been clicked
       addScore();
@@ -65,7 +64,6 @@ function Deck({ addScore, setHighscore }) {
         nmes.push(newName);
         images.push(imgSrc);
       }
-      console.log(nmes);
       setNames(nmes);
       setImgUrl(images);
     }
